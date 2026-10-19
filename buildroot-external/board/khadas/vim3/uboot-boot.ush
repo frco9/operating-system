@@ -38,7 +38,7 @@ fi
 fileenv ${devtype} ${devnum}:1 ${ramdisk_addr_r} cmdline.txt cmdline
 
 # Load device tree
-setenv fdtfile "meson-g12b-s922x-khadas-vim3.dtb"
+setenv fdtfile "meson-g12b-a311d-khadas-vim3.dtb"
 echo "Loading standard device tree ${fdtfile}"
 fatload ${devtype} ${devnum}:1 ${fdt_addr_r} ${fdtfile}
 fdt addr ${fdt_addr_r}
